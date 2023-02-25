@@ -9,7 +9,6 @@ phases:
     commands:
      - echo Install source NPM dependencies...
      - npm install
-     - serverless plugin install -n serverless-offline
   build:
     commands:
       - echo Deployment started on `date`
