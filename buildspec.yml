@@ -9,11 +9,12 @@ phases:
     commands:
      - echo Install source NPM dependencies...
      - npm install
+     - serverless plugin install -n serverless-offline
   build:
     commands:
       - echo Deployment started on `date`
       - echo Deploying with the Serverless Framework
-      - sls deploy -v -s $ENV_NAME
+      - sls deploy 
   post_build:
     commands:
       - echo Deployment completed on `date`
